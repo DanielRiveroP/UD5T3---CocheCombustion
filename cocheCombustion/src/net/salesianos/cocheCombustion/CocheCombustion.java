@@ -47,7 +47,7 @@ public abstract class CocheCombustion extends Vehiculos {
 
     @Override
     public void mover() {
-        if (motorEncendido == true) {
+        if (motorEncendido == true && litrosCombustible > 0) {
             litrosCombustible -= 1;
             System.out.println("El coche se ha movido. Litros de combustible restantes: " + litrosCombustible);
         } else if (litrosCombustible <= 0 || motorEncendido == false) {
