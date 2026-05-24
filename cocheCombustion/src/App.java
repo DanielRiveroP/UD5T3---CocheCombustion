@@ -15,13 +15,6 @@ public class App {
 
         coche.mover();
 
-        coche.arrancar();
-        for (int i = 0; i < 3; i++) {
-            coche.mover();
-        }
-
-        
-
         sc.close();
     }
 }
