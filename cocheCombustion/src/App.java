@@ -10,7 +10,8 @@ public class App {
         String modelo = "Sedan";
         String matricula = "1234ABC";
         // int litrosCombustible = 20;
-        int litrosCombustible = 2;
+        // int litrosCombustible = 2;
+        int litrosCombustible = 5;
         CocheCombustion coche = new CocheCombustion(color, numPuertas, numRuedas, modelo, matricula, litrosCombustible) {
         };
 
@@ -20,6 +21,8 @@ public class App {
         for (int i = 0; i < 3; i++) {
             coche.mover();
         }
+
+        coche.pararMotor();
 
         sc.close();
     }
